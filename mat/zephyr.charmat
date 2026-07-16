@@ -1,0 +1,274 @@
+{
+  "kind": "haven-mat-project",
+  "fileVersion": 1,
+  "templateId": "fh",
+  "snapshotVersion": 2,
+  "snapshot": {
+    "name": "",
+    "state": {
+      "variantFeatures": {
+        "extraBar": false,
+        "multiHand": false,
+        "tokens": false
+      },
+      "colorOverrides": {
+        "banners": {
+          "h": 193,
+          "s": 78,
+          "l": 69
+        },
+        "banners-top": {
+          "h": 190,
+          "s": 90,
+          "l": 50
+        },
+        "banners-left": {
+          "h": 217,
+          "s": 100,
+          "l": 75,
+          "gradient": {
+            "angle": 25,
+            "stops": [
+              {
+                "h": 217,
+                "s": 100,
+                "l": 75,
+                "position": 0
+              },
+              {
+                "h": 190,
+                "s": 90,
+                "l": 50,
+                "position": 0.6460383858267716
+              }
+            ]
+          }
+        },
+        "banners-right": {
+          "h": 217,
+          "s": 100,
+          "l": 75,
+          "gradient": {
+            "angle": 325,
+            "stops": [
+              {
+                "h": 217,
+                "s": 100,
+                "l": 75,
+                "position": 0
+              },
+              {
+                "h": 190,
+                "s": 90,
+                "l": 50,
+                "position": 0.6458538385826772
+              }
+            ]
+          }
+        },
+        "banners-bottom": {
+          "h": 217,
+          "s": 100,
+          "l": 75
+        },
+        "decorations": {
+          "h": 190,
+          "s": 90,
+          "l": 50
+        },
+        "lines": {
+          "h": 217,
+          "s": 100,
+          "l": 75
+        },
+        "gem": {
+          "h": 217,
+          "s": 100,
+          "l": 75
+        },
+        "colored-text": {
+          "h": 190,
+          "s": 90,
+          "l": 50
+        },
+        "traits": {
+          "h": 190,
+          "s": 90,
+          "l": 50
+        },
+        "class-icon": {
+          "h": 240,
+          "s": 100,
+          "l": 0,
+          "a": 1
+        },
+        "background": {
+          "h": 257,
+          "s": 79,
+          "l": 15,
+          "a": 0.58
+        }
+      },
+      "textOverrides": {
+        "frame.name": "Arctic Zephyr",
+        "bg.hand-size": "11",
+        "content.notes": "- group: \n  - custom: \"%p_font-size:6em;color:#554e65%%rimearc%%p%\"\n    position: absolute\n    top: 5.2px\n    left: 43.5px\n  - custom: \"%p_font-size:5.6em%%persist-circle-start%%p%\"\n  - exampleText: Held\n    fontSize: 35px\n    position: relative\n    top: -20px\n    left: 78px\n  flexDirection: column\n  position: absolute\n  left: -20px\n  top: 15px\n- custom: \"You wield a gigantic ice blade called the %p_color:#72d3ee%Rimearc%p% %p_left:1px;top:-1px%%rimearc%%p% that you fling across the battlefield. The %p_left:1px;top:-1px%%rimearc%%p% is a token that can enter any hex, but cannot move through wall lines. At the start of each scenario, %p_left:1px;top:-1px%%rimearc%%p%  starts %p_color:#0dccf2%held%p% on your character mat, and while %p_color:#0dccf2%held%p% it is considered to be in the hex you occupy. The hex with the %p_left:1px;top:-1px%%rimearc%%p% is not considered negative.\" \n  width: 725px\n  position: relative\n  left: 230px\n  marginLeft: 10px\n  marginBottom: 15px\n- divider: \n- custom: \"You have special %p_left:1px;top:-1px%%rimearc%%p% abilities; %p_color:#dc72ed%Throw%p% %p_left:-2px;top:-1px%%ithrow%%p% and %p_color:#edb072%Recall%p% %p_left:-1px;top:-2px%%irecall%%p%. While the %p_left:1px;top:-1px%%rimearc%%p% is %p_color:#0dccf2%held%p%, you may use %p_left:-2px;top:-1px%%ithrow%%p%X abilities to %push%X targeting the %p_left:1px;top:-1px%%rimearc%%p%. Otherwise, you may use %p_left:-1px;top:-2px%%irecall%%p%X abilities to %pull%X targeting the %rimearc%. %p_background-color:#E0A0402E%You may perform a %p_left:-1px;top:-2px%%irecall%%p%X ability %i%only%ie% if the %p_left:1px;top:-1px%%rimearc%%p% ends in your hex%p%. After each of your abilities, if the %p_left:1px;top:-1px%%rimearc%%p% is in the hex you occupy, it becomes %p_color:#0dccf2%held%p%. %p_left:1px;top:-1px%%rimearc%%p% abilities do not follow normal targeting rules. Instead, they target figures in hexes the %p_left:1px;top:-1px%%rimearc%%p% entered or exited during the associated %p_left:-2px;top:-1px%%ithrow%%p% or %p_left:0px;top:-2px%%irecall%%p% ability after the movement of %p_left:1px;top:-1px%%rimearc%%p% was resolved.\"\n  marginTop: -5px",
+        "content.resource-tracker.name": "(Held)"
+      },
+      "assetOverrides": {
+        "bg.portrait": {
+          "assetUrl": "",
+          "position": {
+            "x": -224,
+            "y": 84
+          },
+          "scale": 0.7,
+          "rotation": 0,
+          "sourceUrl": "https://i.imgur.com/E19Lada.png"
+        },
+        "frame.icon": {
+          "assetUrl": "",
+          "position": {
+            "x": 0,
+            "y": 2
+          },
+          "scale": 1.09,
+          "rotation": 0,
+          "sourceUrl": "https://i.imgur.com/Wxn4RTa.png"
+        }
+      },
+      "hpTrack": {
+        "preset": "low"
+      },
+      "traits": [
+        "Arcane",
+        "Resourceful",
+        "Nimble"
+      ],
+      "rulesReferences": [
+        {
+          "title": "Forced Movement",
+          "page": "32"
+        },
+        {
+          "title": "Target",
+          "page": "21"
+        },
+        {
+          "title": "Conditions",
+          "page": "28"
+        }
+      ],
+      "iconLegendShow": {
+        "jump": true,
+        "flying": true,
+        "teleport": true
+      },
+      "bleedEnabled": false,
+      "advancedColors": true,
+      "advancedTraits": false,
+      "customIcons": [
+        {
+          "id": "0004bfb3-06bb-4647-a543-1da7383bea4c",
+          "name": "rimearc",
+          "sourceUrl": "https://i.imgur.com/Y1kgcun.png",
+          "imageUrl": "",
+          "scale": 1
+        },
+        {
+          "id": "cc7ee957-f7ef-44f2-95f2-26009e1ff9d6",
+          "name": "irecall",
+          "sourceUrl": "https://i.imgur.com/rerEwbV.png",
+          "imageUrl": "",
+          "scale": 1
+        },
+        {
+          "id": "2d2eef7a-5db3-4162-843e-59a956c8cb5b",
+          "name": "ithrow",
+          "sourceUrl": "https://i.imgur.com/g7U2Z1c.png",
+          "imageUrl": "",
+          "scale": 1
+        }
+      ],
+      "resourceTracker": {
+        "enabled": false,
+        "maxResources": 1,
+        "advancedPositioning": false,
+        "slotOffsetsY": [],
+        "gapPx": 0
+      },
+      "extraBar": {
+        "secondBar": "off",
+        "summonStats": false,
+        "damageConditions": false,
+        "barTrack": {
+          "preset": "mid"
+        }
+      }
+    },
+    "back": {
+      "bleedEnabled": false,
+      "originMode": "builtin",
+      "originKey": "Algox",
+      "customOriginText": "",
+      "customDescription": "",
+      "retirementText": "N/A",
+      "portraitTransform": {
+        "x": -766,
+        "y": 17,
+        "scale": 1.9
+      },
+      "complexity": 3,
+      "classStats": {
+        "melee": 2,
+        "ranged": 5,
+        "mobility": 4,
+        "support": 5,
+        "defense": 0,
+        "control": 3
+      },
+      "classDescription": "The Arctic Zephyrs exist within both tribes. Smaller than their kin, they master the mountain gales and cold through rigorous training. They ignore internal feuds to protect against external threats, serving as elite guardians. In battle, they conjure and guide massive ice blades called Rimearcs. The freezing gales generated by these flying blades earned them their name.",
+      "colorOverrides": {
+        "class-icon": {
+          "h": 217,
+          "s": 100,
+          "l": 75,
+          "a": 1
+        },
+        "banners": {
+          "h": 217,
+          "s": 100,
+          "l": 75
+        },
+        "banners-top": {
+          "h": 190,
+          "s": 90,
+          "l": 50
+        },
+        "banners-bottom": {
+          "h": 217,
+          "s": 100,
+          "l": 75,
+          "gradient": {
+            "angle": 0,
+            "stops": [
+              {
+                "h": 217,
+                "s": 100,
+                "l": 75,
+                "position": 0.2376353346456693
+              },
+              {
+                "h": 193,
+                "s": 78,
+                "l": 69,
+                "position": 1
+              }
+            ]
+          }
+        }
+      },
+      "advancedColors": true
+    }
+  }
+}
