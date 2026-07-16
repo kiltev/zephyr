@@ -14,7 +14,7 @@
 
 local CONFIG = {
   TOKEN_NAME           = "Rimearc",
-  TOKEN_IMAGE          = "https://i.imgur.com/W77V4kK.png", -- transparent PNG
+  TOKEN_IMAGE          = "https://raw.githubusercontent.com/kiltev/zephyr/main/resources/icons/rimearc.png", -- transparent PNG
   TOKEN_TAGS           = { "Has Action", "Has Aid Tokens", "Has Conditions", "Has Health", "Terrain" },
 
   TOKEN_SCALE          = { 0.35, 0.6, 0.35 }, -- token size (X/Z = diameter). Lower = smaller. TUNE.
@@ -22,11 +22,11 @@ local CONFIG = {
   TOKEN_MERGE_DISTANCE = 15,
 
   USE_SHADOW_BUNDLE    = false, -- false = minimal token (works); true = attach bundle (crashes when raw-spawned)
-  TOKEN_SCRIPT_URL     = "https://raw.githubusercontent.com/kiltev/haven-unscorched/main/scripts/token.lua?v=1",
+  TOKEN_SCRIPT_URL     = "https://raw.githubusercontent.com/kiltev/zephyr/main/scripts/token.lua?v=1",
 
   ANCHOR_NAME_CONTAINS = "Arctic Zephyr",
 
-  POOL_NAME            = "Rimearc Pool",
+  POOL_NAME            = "Rimearc",
   -- WORLD-space offset from the anchor (character sheet/standee):
   --   [1] X: + right,  - left
   --   [2] Y: + up off the table (keep small so it rests on the table)
