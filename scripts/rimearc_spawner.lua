@@ -110,8 +110,6 @@ local function tokenData(px, py, pz)
   return data
 end
 
-local buildCount = 0
-
 local function buildPool(anchor)
   if not scriptReady() then
     printToAll("[Rimearc] token script not loaded", "Red"); return
@@ -123,8 +121,7 @@ local function buildPool(anchor)
   local p = anchor.getPosition()
   local o = CONFIG.POOL_OFFSET
   local pos = { p.x + o[1], p.y + o[2], p.z + o[3] }
-  buildCount = buildCount + 1
-  local poolName = CONFIG.POOL_NAME .. " " .. buildCount
+  local poolName = CONFIG.POOL_NAME
   dbg(string.format("anchor '%s' pos=(%.2f, %.2f, %.2f) -> pool pos=(%.2f, %.2f, %.2f)",
     anchor.getName(), p.x, p.y, p.z, pos[1], pos[2], pos[3]))
 
