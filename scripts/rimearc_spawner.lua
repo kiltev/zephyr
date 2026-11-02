@@ -12,14 +12,30 @@ local TOKEN_LOAD_TIMEOUT_SECONDS = 8
 local MEASURING_DEPTH = -5
 local CARDBOARD_MATERIAL = 3
 local INFINITE_BAG_TYPE = 7
+local SOLO_ITEM_NAME = "Arctic Zephyr Solo Scenario Item"
+local SOLO_ITEM_CARD_ID = 100
+local SOLO_ITEM_ART = {
+    ["1"] = {
+        FaceURL = "https://storage.googleapis.com/download/storage/v1/b/gloomhaven/o/upload%2F6ae7bb0aa2a26f9bfb138553_itemCardFront_2026-11-02_01-05-42.png?generation=1793581543917110&alt=media",
+        BackURL = "https://storage.googleapis.com/download/storage/v1/b/gloomhaven/o/upload%2F6ae7bb0aa2a26f9bfb138553_itemCardBack_2026-11-02_01-05-48.png?generation=1793581549675039&alt=media",
+        NumWidth = 1,
+        NumHeight = 1,
+        BackIsHidden = true,
+        UniqueBack = true,
+        Type = 0,
+    },
+}
+local SOLO_ITEM_TRANSFORM = { scaleX = 0.93, scaleY = 1, scaleZ = 0.93 }
+local CARD_FACE_UP_ROTATION = { 0, 180, 0 }
 local SLOT_RIGHT_OF_LOCKED_MODIFIERS = { -0.192, 0.1, 0.912 }
+local SLOT_BELOW_CHARACTER_BOX = { -0.384, 0.1, 0.912 }
 local PLAYER_MAT_TAG = "Player Mat"
 local OWNER_TAG_PREFIX = "Owner "
 local REGISTER_DELAY_SECONDS = 0.5
 
-local function poolExists()
+local function exists(name)
     for _, object in ipairs(getObjects()) do
-        if object.getName() == POOL_NAME then return true end
+        if object.getName() == name then return true end
     end
     return false
 end
@@ -91,10 +107,33 @@ local function spawnPool(position)
     })
 end
 
+local function soloItemData()
+    return {
+        Name = "Card",
+        Nickname = SOLO_ITEM_NAME,
+        CardID = SOLO_ITEM_CARD_ID,
+        Transform = SOLO_ITEM_TRANSFORM,
+        CustomDeck = SOLO_ITEM_ART,
+    }
+end
+
+local function spawnSoloItem(mat)
+    spawnObjectData({
+        data = soloItemData(),
+        position = mat.positionToWorld(SLOT_BELOW_CHARACTER_BOX),
+        rotation = CARD_FACE_UP_ROTATION,
+    })
+end
+
+local function spawnMissingComponents(mat)
+    if not exists(POOL_NAME) then spawnPool(mat.positionToWorld(SLOT_RIGHT_OF_LOCKED_MODIFIERS)) end
+    if not exists(SOLO_ITEM_NAME) then spawnSoloItem(mat) end
+end
+
 function onCharacterLoad(character, playerNumber)
-    if character.class ~= CLASS_NAME or poolExists() then return end
+    if character.class ~= CLASS_NAME then return end
     local mat = playerMat(playerNumber)
-    if mat ~= nil then spawnPool(mat.positionToWorld(SLOT_RIGHT_OF_LOCKED_MODIFIERS)) end
+    if mat ~= nil then spawnMissingComponents(mat) end
 end
 
 function __callExtension(request)
