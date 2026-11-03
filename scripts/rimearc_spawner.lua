@@ -16,8 +16,8 @@ local SOLO_ITEM_NAME = "Arctic Zephyr Solo Scenario Item"
 local SOLO_ITEM_CARD_ID = 100
 local SOLO_ITEM_ART = {
     ["1"] = {
-        FaceURL = "https://storage.googleapis.com/download/storage/v1/b/gloomhaven/o/upload%2F6ae7bb0aa2a26f9bfb138553_itemCardFront_2026-11-02_01-05-42.png?generation=1793581543917110&alt=media",
-        BackURL = "https://storage.googleapis.com/download/storage/v1/b/gloomhaven/o/upload%2F6ae7bb0aa2a26f9bfb138553_itemCardBack_2026-11-02_01-05-48.png?generation=1793581549675039&alt=media",
+        FaceURL = "https://raw.githubusercontent.com/kiltev/zephyr/main/solo_item/solo-item.png",
+        BackURL = "https://raw.githubusercontent.com/kiltev/zephyr/main/solo_item/solo-item-back.png",
         NumWidth = 1,
         NumHeight = 1,
         BackIsHidden = true,
