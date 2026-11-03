@@ -6,7 +6,7 @@ local DISK_MESH = "https://raw.githubusercontent.com/kiltev/zephyr/main/resource
 local DISK_MESH_DIAMETER = 2
 local DISK_MESH_HEIGHT = 0.2
 local TOKEN_TAGS = { "Has Action", "Has Aid Tokens", "Has Conditions", "Has Health", "Terrain" }
-local TOKEN_SCALE = { x = 0.35, y = 0.6, z = 0.35 }
+local TOKEN_SCALE = { x = 0.4, y = 0.6, z = 0.4 }
 local TOKEN_SHAPE = { Thickness = 0.2, MergeDistance = 15, Stackable = false }
 local TOKEN_LOAD_TIMEOUT_SECONDS = 8
 local MEASURING_DEPTH = -5
